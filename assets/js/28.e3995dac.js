@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{507:function(n,e,t){"use strict";t.r(e);var s={name:"design-component-demo"},i=t(22),o=Object(i.a)(s,(function(){var n=this.$createElement,e=this._self._c||n;return e("div",[this._v("\n  design-co "),e("Design-InnerDesignComponent"),this._v("o\n")],1)}),[],!1,null,null,null);e.default=o.exports}}]);
