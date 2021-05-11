@@ -1,2 +1,2 @@
-# jiangsy1113.github.io
+# jiangsy.github.io
 个人网站
