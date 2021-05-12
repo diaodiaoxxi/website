@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TCP协议 | 前端小站</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/website/blog/assets/favicon.ico">
+    <script type="text/javascript" src="https://cms.hs.net/r/cms/www/itn/js/userAnalysis.js?appkey=NjRfMQ==" async="true" id="user_analysis_id"></script>
+    <meta name="description" content="~">
+    <link rel="preload" href="/website/blog/assets/css/0.styles.8cc06066.css" as="style"><link rel="preload" href="/website/blog/assets/js/app.d7f4e0b4.js" as="script"><link rel="preload" href="/website/blog/assets/js/7.e5a4a7de.js" as="script"><link rel="preload" href="/website/blog/assets/js/55.3bcff0fe.js" as="script"><link rel="preload" href="/website/blog/assets/js/37.133e5c9b.js" as="script"><link rel="prefetch" href="/website/blog/assets/js/1.35396e1f.js"><link rel="prefetch" href="/website/blog/assets/js/10.54bec953.js"><link rel="prefetch" href="/website/blog/assets/js/11.026d1919.js"><link rel="prefetch" href="/website/blog/assets/js/12.00d4c28a.js"><link rel="prefetch" href="/website/blog/assets/js/13.4681dd7d.js"><link rel="prefetch" href="/website/blog/assets/js/14.08665e8c.js"><link rel="prefetch" href="/website/blog/assets/js/15.74c3e15f.js"><link rel="prefetch" href="/website/blog/assets/js/16.360f2fb7.js"><link rel="prefetch" href="/website/blog/assets/js/17.fa7d626a.js"><link rel="prefetch" href="/website/blog/assets/js/18.13be786d.js"><link rel="prefetch" href="/website/blog/assets/js/19.23680e51.js"><link rel="prefetch" href="/website/blog/assets/js/2.664274c1.js"><link rel="prefetch" href="/website/blog/assets/js/20.55f3b4e3.js"><link rel="prefetch" href="/website/blog/assets/js/21.8942f4b2.js"><link rel="prefetch" href="/website/blog/assets/js/22.da67ecd7.js"><link rel="prefetch" href="/website/blog/assets/js/23.a89b2b02.js"><link rel="prefetch" href="/website/blog/assets/js/24.723a2bd9.js"><link rel="prefetch" href="/website/blog/assets/js/25.82636da4.js"><link rel="prefetch" href="/website/blog/assets/js/26.af7c40cb.js"><link rel="prefetch" href="/website/blog/assets/js/27.fe4378f8.js"><link rel="prefetch" href="/website/blog/assets/js/28.6f0890d5.js"><link rel="prefetch" href="/website/blog/assets/js/29.6ad4a457.js"><link rel="prefetch" href="/website/blog/assets/js/3.742a7a1e.js"><link rel="prefetch" href="/website/blog/assets/js/30.db2ce232.js"><link rel="prefetch" href="/website/blog/assets/js/31.f991e740.js"><link rel="prefetch" href="/website/blog/assets/js/32.d56dfaeb.js"><link rel="prefetch" href="/website/blog/assets/js/33.93d46f6d.js"><link rel="prefetch" href="/website/blog/assets/js/34.3ae31cef.js"><link rel="prefetch" href="/website/blog/assets/js/35.849c61ff.js"><link rel="prefetch" href="/website/blog/assets/js/36.4bc2520c.js"><link rel="prefetch" href="/website/blog/assets/js/38.b648ba2e.js"><link rel="prefetch" href="/website/blog/assets/js/39.678af0db.js"><link rel="prefetch" href="/website/blog/assets/js/4.cf14bc38.js"><link rel="prefetch" href="/website/blog/assets/js/40.c1a0b44d.js"><link rel="prefetch" href="/website/blog/assets/js/41.8382649d.js"><link rel="prefetch" href="/website/blog/assets/js/42.78f45b6f.js"><link rel="prefetch" href="/website/blog/assets/js/43.47020707.js"><link rel="prefetch" href="/website/blog/assets/js/44.32ff1f37.js"><link rel="prefetch" href="/website/blog/assets/js/45.4a4a75f4.js"><link rel="prefetch" href="/website/blog/assets/js/46.da24a6dc.js"><link rel="prefetch" href="/website/blog/assets/js/47.02039f2b.js"><link rel="prefetch" href="/website/blog/assets/js/48.a92ed936.js"><link rel="prefetch" href="/website/blog/assets/js/49.2cf784f8.js"><link rel="prefetch" href="/website/blog/assets/js/5.64482bde.js"><link rel="prefetch" href="/website/blog/assets/js/50.fa36e0f8.js"><link rel="prefetch" href="/website/blog/assets/js/51.e2e5684c.js"><link rel="prefetch" href="/website/blog/assets/js/52.a12ef1d5.js"><link rel="prefetch" href="/website/blog/assets/js/53.b303c936.js"><link rel="prefetch" href="/website/blog/assets/js/54.3cb200c6.js"><link rel="prefetch" href="/website/blog/assets/js/56.44cdc0ab.js"><link rel="prefetch" href="/website/blog/assets/js/57.9b7bd15e.js"><link rel="prefetch" href="/website/blog/assets/js/58.1b4107fb.js"><link rel="prefetch" href="/website/blog/assets/js/59.d8341454.js"><link rel="prefetch" href="/website/blog/assets/js/60.082bbb11.js"><link rel="prefetch" href="/website/blog/assets/js/61.6ebb72ce.js"><link rel="prefetch" href="/website/blog/assets/js/62.b56b6e4e.js"><link rel="prefetch" href="/website/blog/assets/js/63.f43a14f1.js"><link rel="prefetch" href="/website/blog/assets/js/64.1882672c.js"><link rel="prefetch" href="/website/blog/assets/js/65.e31b31dd.js"><link rel="prefetch" href="/website/blog/assets/js/66.cf9301b3.js"><link rel="prefetch" href="/website/blog/assets/js/67.61e74772.js"><link rel="prefetch" href="/website/blog/assets/js/68.a152719d.js"><link rel="prefetch" href="/website/blog/assets/js/69.603629eb.js"><link rel="prefetch" href="/website/blog/assets/js/70.cd2c86da.js"><link rel="prefetch" href="/website/blog/assets/js/71.532b6cac.js"><link rel="prefetch" href="/website/blog/assets/js/72.34498702.js"><link rel="prefetch" href="/website/blog/assets/js/73.05311583.js"><link rel="prefetch" href="/website/blog/assets/js/74.b5bc928b.js"><link rel="prefetch" href="/website/blog/assets/js/75.b743ff49.js"><link rel="prefetch" href="/website/blog/assets/js/76.22cf834b.js"><link rel="prefetch" href="/website/blog/assets/js/77.d788a878.js"><link rel="prefetch" href="/website/blog/assets/js/78.a71420c7.js"><link rel="prefetch" href="/website/blog/assets/js/79.ddffbdfc.js"><link rel="prefetch" href="/website/blog/assets/js/8.fc7de73c.js"><link rel="prefetch" href="/website/blog/assets/js/80.cc3773c6.js"><link rel="prefetch" href="/website/blog/assets/js/81.7c76945f.js"><link rel="prefetch" href="/website/blog/assets/js/82.a6809757.js"><link rel="prefetch" href="/website/blog/assets/js/9.4adbc6f5.js">
+    <link rel="stylesheet" href="/website/blog/assets/css/0.styles.8cc06066.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/website/blog/" class="home-link router-link-active"><img src="/website/blog/assets/logo.png" alt="前端小站" class="logo"> <span class="site-name can-hide">前端小站</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/website/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/website/blog/component/api/tree.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/website/blog/javascript/闭包/闭包.html" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/website/blog/vue/mvc&amp;&amp;mvvm.html" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/website/blog/browser/进程.html" class="nav-link">
+  浏览器
+</a></div><div class="nav-item"><a href="/website/blog/network/http.html" class="nav-link">
+  网络
+</a></div><div class="nav-item"><a href="/website/blog/webpack/webpack.html" class="nav-link">
+  webpack
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/website/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/website/blog/component/api/tree.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/website/blog/javascript/闭包/闭包.html" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/website/blog/vue/mvc&amp;&amp;mvvm.html" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/website/blog/browser/进程.html" class="nav-link">
+  浏览器
+</a></div><div class="nav-item"><a href="/website/blog/network/http.html" class="nav-link">
+  网络
+</a></div><div class="nav-item"><a href="/website/blog/webpack/webpack.html" class="nav-link">
+  webpack
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/website/blog/browser/进程.html" class="sidebar-link">进程</a></li><li><a href="/website/blog/browser/浏览器缓存机制.html" class="sidebar-link">浏览器缓存机制</a></li><li><a href="/website/blog/browser/事件流.html" class="sidebar-link">事件流</a></li><li><a href="/website/blog/browser/同源策略.html" class="sidebar-link">同源策略</a></li><li><a href="/website/blog/browser/浏览器url输入的全过程.html" class="sidebar-link">从输入URL到页面展示，这中间发生了什么</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>安全</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/website/blog/browser/页面优化.html" class="sidebar-link">页面优化</a></li><li><a href="/website/blog/browser/消息队列.html" class="sidebar-link">消息任务队列</a></li><li><a href="/website/blog/browser/硬件加速.html" class="sidebar-link">硬件加速</a></li><li><a href="/website/blog/browser/垃圾回收/垃圾回收.html" class="sidebar-link">垃圾回收</a></li><li><a href="/website/blog/browser/preformance.html" class="sidebar-link">Performance</a></li><li><a href="/website/blog/browser/PWA.html" class="sidebar-link">PWA</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="tcp协议"><a href="#tcp协议" class="header-anchor">#</a> TCP协议</h1> <h2 id="一个数据包的-旅程"><a href="#一个数据包的-旅程" class="header-anchor">#</a> 一个数据包的“旅程”</h2> <p>互联网中的数据是通过<code>数据包</code>来传输的。如果发送的数据很大，那么该数据就会被<code>拆分为很多小数据包</code>来传输
+互联网上不同的在线设备都有唯一的地址，地址只是一个数字
+计算机的地址就称为 <code>IP</code> 地址，访问任何网站实际上只是你的计算机向另外一台计算机请求信息</p> <h2 id="udp：把数据包送达应用程序"><a href="#udp：把数据包送达应用程序" class="header-anchor">#</a> UDP：把数据包送达应用程序</h2> <p>IP 通过 IP 地址信息把数据包发送给指定的电脑，而 UDP通过<code>端口号</code>把数据包分发给正确的程序。
+UDP<code>不提供重发机制</code>
+UDP 不能保证数据可靠性，但是传输速度却非常快
+端口号: 目标端口号、本机端口号</p> <p>特点：</p> <ul><li>面向报文的</li></ul> <p>UDP是一个面向报文（报文可以理解为一段段的数据）的协议</p> <ul><li>不可靠性</li></ul> <p>UDP 是无连接的，也就是说通信不需要建立和断开连接。
+UDP 也是不可靠的。协议收到什么数据就传递什么数据，并且也不会备份数据，对方能不能收到是不关心的
+UDP <code>没有拥塞控制</code>，一直会以恒定的速度发送数据。即使网络条件不好，也不会对发送速率进行调整。这样实现的弊端就是在网络条件不好的情况下可能会导致丢包，但是优点也很明显，在某些实时性要求高的场景（比如电话会议）就需要使用 UDP 而不是 TCP。</p> <ul><li>高效
+因为 UDP 没有 TCP 那么复杂，需要保证数据不丢失且有序到达。所以 UDP 的头部开销小，只有八字节，相比 TCP 的至少二十字节要少得多，在传输数据报文时是很高效的。</li></ul> <p>缺点：</p> <ul><li>数据包在传输过程中容易丢失；</li> <li>大文件会被拆分成很多小的数据包来传输，这些小的数据包会经过不同的路由，并在不同的时间到达接收端，而 UDP 协议并不知道如何组装这些数据包，从而把这些数据包还原成完整的文件。</li></ul> <h2 id="tcp协议-传输控制协议"><a href="#tcp协议-传输控制协议" class="header-anchor">#</a> TCP协议 传输控制协议</h2> <p><code>面向连接的，可靠的，基于字节流的传输层的通信协议</code>；解决了如何保证页面文件能被完整送达浏览器</p> <ul><li>针对数据包丢失的问题，TCP提供<code>重传机制</code></li> <li>针对<code>数据包排序机制</code>，保证把乱序的数据包整合成完整的文件</li></ul> <p>tcp存在数据包传输过程中的 <code>队头阻塞</code> 问题</p> <p>生命周期：建立连接、传输数据、断开连接</p> <p>SYN简称就是 同步序列号</p> <p>SYN: 当SYN=1，ACK=0时，表示当前报文段是一个连接请求报文。当SYN=1，ACK=1时，表示当前报文段是一个同意建立连接的应答报文。
+ACK: 该字段为一表示确认号字段有效
+FIN: 该字段为一表示此报文段是一个释放连接的请求报文</p> <ul><li>建立连接阶段（三次握手）</li></ul> <p>一句话概括:确认双方的接收与发送能力是否正常。(双方是否都处于可 响应的状态)</p> <p>为了防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误；网络中存在延迟的重复分组</p> <ol><li><p>三次握手才可以阻止重复历史连接的初始化（主要原因）；为了防止旧的重复连接初始化造成混乱</p></li> <li><p>三次握手才可以同步双方的初始序列号
+TCP 协议的通信双方， 都必须维护一个「序列号」<code>Seq Number</code>， 序列号是可靠传输的一个关键因素，它的作用：</p> <ul><li>接收方可以去除重复的数据；</li> <li>接收方可以根据数据包的序列号按序接收；</li> <li>可以标识发送出去的数据包中， 哪些是已经被对方收到的</li></ul></li> <li><p>三次握手才可以避免资源浪费</p></li></ol> <ul><li>传输数据阶段</li></ul> <p><code>接收端需要对每个数据包进行确认操作</code>，也就是接收端在接收到数据包之后，需要发送确认数据包给发送端
+当发送端发送了一个数据包之后，在规定时间内没有接收到接收端反馈的确认消息，则判断为<code>数据包丢失</code>，并触发发送端的<code>重发机制</code>
+一个大的文件在传输过程中会被拆分成很多小的数据包，这些数据包到达接收端后，接收端会按照 <code>TCP 头中的序号为其排序</code>，从而保证组成完整的数据</p> <ul><li>断开连接阶段（四次挥手）</li></ul> <ol><li>当客户端将信息（请求头、请求主体……）传给服务器之后，它就立马通知 服务器端 我准备要关闭连接通道了</li> <li>由于数据传输的内容相对过大且准备数据传输内容需要时间，
+<ul><li>服务器端无法第一时间将数据传输给客户端，</li> <li>但是它需要告诉客户端一声：我知道了，你等我把数据内容传输给你后就断开连接吧。（立即回答）</li></ul></li> <li>服务器端 将 客户端请求的数据返回给客户端，同时，服务器再告诉客户端：你要的东西我都给你了 FIN=1</li> <li>客户端收到数据后，告诉服务器端：你给我的东西我收到了，那我断开连接了，再见 ACK=1</li></ol> <h2 id="tcp-和-udp-区别"><a href="#tcp-和-udp-区别" class="header-anchor">#</a> TCP 和 UDP 区别</h2> <p>TCP 的可靠性含义： 接收方收到的数据是完整， 有序， 无差错的。
+UDP 不可靠性含义： 接收方接收到的数据可能存在部分丢失， 顺序也不一定能保证。</p> <ol><li>连接
+TCP 是面向连接的传输层协议，传输数据前先要建立连接。
+UDP 是不需要连接，即刻传输数据。</li> <li>服务对象
+TCP 是一对一的两点服务，即一条连接只有两个端点。
+UDP 支持一对一、一对多、多对多的交互通信</li> <li>可靠性
+TCP 是可靠交付数据的，数据可以无差错、不丢失、不重复、按需到达。
+UDP 是尽最大努力交付，不保证可靠交付数据。</li> <li>拥塞控制、流量控制
+TCP 有拥塞控制和流量控制机制，保证数据传输的安全性。
+UDP 则没有，即使网络非常拥堵了，也不会影响 UDP 的发送速率。</li> <li>首部开销
+TCP 首部长度较长，会有一定的开销，首部在没有使用「选项」字段时是 20 个字节，如果使用了「选项」字段则会变长的。
+UDP 首部只有 8 个字节，并且是固定不变的，开销较小。</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/website/blog/assets/js/app.d7f4e0b4.js" defer></script><script src="/website/blog/assets/js/7.e5a4a7de.js" defer></script><script src="/website/blog/assets/js/55.3bcff0fe.js" defer></script><script src="/website/blog/assets/js/37.133e5c9b.js" defer></script>
+  </body>
+</html>
